@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>AbpAdmin</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpAdmin.Domain\AbpAdmin.Domain.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.MySQL" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.EntityFrameworkCore" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.EntityFrameworkCore" Version="4.2.2" />
+  </ItemGroup>
+
+</Project>

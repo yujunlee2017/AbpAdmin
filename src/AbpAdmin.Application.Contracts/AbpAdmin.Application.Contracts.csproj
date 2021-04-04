@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>AbpAdmin</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpAdmin.Domain.Shared\AbpAdmin.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="4.2.2" />
+  </ItemGroup>
+
+</Project>
